@@ -1,6 +1,7 @@
-Explain setjmp() and longjmp() Functions in Standard C Library with Examples
+<h3>Explain setjmp() and longjmp() Functions in Standard C Library with Examples</h3><br>
 
-Question: What are setjmp() and longjmp() Functions in Standard C Library. Explain with Examples When to Use them
+<h3> Question: What are setjmp() and longjmp() Functions in Standard C Library. Explain with Examples When to Use them </h3>
+
 Answer: ‘setjmp()’ and ‘longjmp()’ functions provide a powerful mechanism similar to ‘goto’ but not restricted to just current function. This mechanism is useful in situations where there’s a deeply nested function calls and when error gets detected, in some lower-level function, then control immediately transfers to top-level function without having to return and check for error code by intermediate functions. These functions work in pairs as follows:
 
 1. setjmp(jmp_buf resume_here) must be called first. This initializes ‘resume_here’ with program state information viz. value of pointer to the top of the stack, value of program counter and some other info. It returns ZERO when returns first time.
